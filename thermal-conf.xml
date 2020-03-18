@@ -17,27 +17,21 @@
             <TripPoints>
                <TripPoint>
                   <SensorType>CPU_TEMP</SensorType>
-                  <Temperature>88000</Temperature>
+                  <Temperature>85000</Temperature>
                   <type>passive</type>
-                  <ControlType>SEQUENTIAL</ControlType>
+                  <ControlType>PARALLEL</ControlType>
                   <CoolingDevice>
                      <index>1</index>
                      <type>intel_powerclamp</type>
-                     <influence>80</influence>
+                     <influence>60</influence>
                      <SamplingPeriod>5</SamplingPeriod>
                   </CoolingDevice>
                   <CoolingDevice>
                      <index>2</index>
                      <type>cpufreq</type>
-                     <influence>20</influence>
+                     <influence>40</influence>
                      <SamplingPeriod>10</SamplingPeriod>
                   </CoolingDevice>
-                  <!-- <CoolingDevice>
-                     <index>3</index>
-                     <type>Processor</type>
-                     <influence>10</influence>
-                     <SamplingPeriod>10</SamplingPeriod>
-                  </CoolingDevice> -->
                </TripPoint>
             </TripPoints>
          </ThermalZone>
@@ -46,9 +40,9 @@
       <CoolingDevice>
          <Type>intel_powerclamp</Type>
          <MinState>0</MinState>
-         <IncDecStep>1</IncDecStep>
+         <IncDecStep>2</IncDecStep>
          <ReadBack> 0 </ReadBack>
-         <MaxState>25</MaxState>
+         <MaxState>30</MaxState>
          <DebouncePeriod>5</DebouncePeriod>
       </CoolingDevice>
 
